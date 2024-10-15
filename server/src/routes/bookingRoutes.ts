@@ -1,11 +1,10 @@
-// src/routes/bookingRoutes.ts
 import express from 'express';
-import { createBooking, getBookings } from '../controllers/bookingController';
+import { createBooking, getBookings } from '../controllers/bookingController'; // Importación correcta
 
 const router = express.Router();
 
-// Rutas
-router.post('/bookings', createBooking); // Crear reserva
-router.get('/bookings', getBookings); // Obtener todas las reservas
+// Definir las rutas
+router.post('/bookings', createBooking); // Para crear una reserva
+router.get('/bookings', getBookings); // Para obtener todas las reservas
 
 export default router;
